@@ -7,14 +7,13 @@ import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 
 ///parametrized Lion test
-
 @RunWith(Parameterized.class)
 
 public class ParametrizedTestLion {
     private final String sex;
+    private final boolean expectedHasMane;
     @Mock
     Feline feline;
-    private final boolean expectedHasMane;
 
     public ParametrizedTestLion(String sex, boolean expectedHasMane) {
         this.sex = sex;

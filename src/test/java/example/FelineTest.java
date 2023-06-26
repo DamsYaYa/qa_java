@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.List;
 
 ///Feline test
-public class FelineTest {
+    public class FelineTest {
     @Test
     public void eatMeatReturnsCorrectValue() throws Exception {
 

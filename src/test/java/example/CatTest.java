@@ -8,8 +8,10 @@ import org.mockito.Mockito;
 import java.util.List;
 
 ///cat test
-
 public class CatTest extends BaseTest {
+
+    @Mock
+    Predator predator;
 
     @Test
     public void getSoundReturnsCorrectValue() {
@@ -21,8 +23,6 @@ public class CatTest extends BaseTest {
 
         Assert.assertEquals(expectedSound, actualSound);
     }
-
-    @Mock Predator predator;
 
     @Test
     public void getFoodReturnsCorrectValue() throws Exception {
